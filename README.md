@@ -3,6 +3,8 @@
 
 #### Martinez Sastre, Gonzalo Gabriel - 102321
 
+Link al repositorio de Github: https://github.com/gonzalomartinezs/tp0-taller
+
 ## Introducción
 
 EL objetivo del presente trabajo consiste en comprender el funcionamiento del sistema de entregas SERCOM para lograr hacer un correcto uso del mismo, así como también se busca afianzar conceptos básicos de la programación tales como el proceso de compilación y el de depuración.
