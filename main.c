@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "paso6_wordscounter.h"
+#include "wordscounter.h"
 
 #define SUCCESS 0
 #define ERROR 1
@@ -28,4 +28,3 @@ int main(int argc, char* argv[]) {
         return SUCCESS;
     }
 }
-

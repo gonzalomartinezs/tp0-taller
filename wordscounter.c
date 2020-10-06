@@ -1,4 +1,4 @@
-#include "paso6_wordscounter.h"
+#include "wordscounter.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -36,13 +36,13 @@ static char wordscounter_next_state(wordscounter_t *self, char state, char c) {
     char next_state = state;
 
     if (state == STATE_WAITING_WORD) {
-        if (c == EOF) { 
+        if (c == EOF) {
             next_state = STATE_FINISHED;
         } else if (strchr(DELIM_WORDS, c) == NULL) {
             next_state = STATE_IN_WORD;
         }
     } else if (state == STATE_IN_WORD) {
-        if (c == EOF) { 
+        if (c == EOF) {
             next_state = STATE_FINISHED;
             self->words++;
         } else if (strchr(DELIM_WORDS, c) != NULL) {
@@ -53,4 +53,3 @@ static char wordscounter_next_state(wordscounter_t *self, char state, char c) {
 
     return next_state;
 }
-
