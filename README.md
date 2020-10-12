@@ -343,6 +343,8 @@ En este caso, Valgrind no puede realizar un análisis completo debido a que como
 
 **e.** Un *segmentation fault* es un error lanzado por el hardware como mecanismo de protección producto de que se intentó acceder a un área de memoria para la cual no se cuenta con autorización de hacerlo.
 
+> Un detalle: Más que acceder es operar. Por ejemplo, el code segment es un area a la cuál tenemos acceso de lectura, pero si intentamos escribir en el mismo, se lanza segmentation fault.
+
 Por su parte, un *buffer overflow* es un error que se produce cuando durante la escritura en un buffer, el tamaño de la información que se está escribiendo es mayor a la capacidad del mismo, produciendo que se sobrescriban los datos almacenados en las direcciones contiguas de memoria.
 
 ### Paso 5
